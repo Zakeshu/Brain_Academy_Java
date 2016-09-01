@@ -10,4 +10,7 @@ package com.brainacad.module_1.LabWork_1_6;
  * 4    8   12  16
  */
 public class Lab_Work_1_6_3 {
+    public static void main  (String[] args) {
+
+    }
 }

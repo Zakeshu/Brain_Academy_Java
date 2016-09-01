@@ -8,4 +8,7 @@ package com.brainacad.module_1.LabWork_1_6;
  *
  */
 public class Lab_Work_1_6_2 {
+    public static void main  (String[] args) {
+
+    }
 }

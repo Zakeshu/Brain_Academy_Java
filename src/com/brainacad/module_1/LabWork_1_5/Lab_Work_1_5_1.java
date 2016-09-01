@@ -13,4 +13,14 @@ package com.brainacad.module_1.LabWork_1_5;
  * 8 7 6 5 4 3 2  1
  */
 public class Lab_Work_1_5_1 {
+    public static void main  (String[] args) {
+
+        for (int i = 1; i < 9; i++) {
+            for (int j = i; j >= 8; j-- ) {
+               System.out.println(i);
+//                j--;
+            }
+//            System.out.println(i);
+        }
+    }
 }

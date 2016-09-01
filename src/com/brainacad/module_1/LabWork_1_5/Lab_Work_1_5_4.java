@@ -6,4 +6,7 @@ package com.brainacad.module_1.LabWork_1_5;
  * The output shall look: 3 4 ... 20
  */
 public class Lab_Work_1_5_4 {
+    public static void main  (String[] args) {
+
+    }
 }

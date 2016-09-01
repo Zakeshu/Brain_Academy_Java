@@ -7,15 +7,12 @@ package com.brainacad.module_1.LabWork_1_4;
  */
 public class Lab_Work_1_4_3 {
     public  static void main (String[] args){
-        int a = 2, b = 5;
-//        int a = 2;
-//        int b = 5;
 
+        boolean a = false, b = true;
 
-        System.out.println("a + b = " + (a + b));
-        System.out.println("a - b = "+ (a - b));
-        System.out.println("b / a = " + b / a );
-        System.out.println("a * b = " + a * b );
-        System.out.println("a % b = " + a % b );
+        System.out.println("a & b = " + (a & b));
+        System.out.println("a | b = " + (a | b));
+        System.out.println("a != b = " + (a != b));
+        System.out.println("a ^ b = " + (a ^ b));
     }
 }

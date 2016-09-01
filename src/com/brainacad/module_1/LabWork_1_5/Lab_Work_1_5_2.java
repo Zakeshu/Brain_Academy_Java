@@ -13,4 +13,7 @@ package com.brainacad.module_1.LabWork_1_5;
  * -One					- Other
  */
 public class Lab_Work_1_5_2 {
+    public static void main  (String[] args) {
+
+    }
 }

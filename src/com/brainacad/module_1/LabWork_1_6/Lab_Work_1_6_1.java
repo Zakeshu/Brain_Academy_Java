@@ -8,8 +8,11 @@ package com.brainacad.module_1.LabWork_1_6;
 public class Lab_Work_1_6_1 {
     public static void main  (String[] args) {
         int[] m = new int[15];
-        for(int i = 0; i > 15; i++) {
-            int b = 2;
+        int b = 2;
+
+        for(int i = 0; i < 15; i++) {
+            m[i] = b;
+            b +=  2;
         }
         for ( int i = 0; i <m.length; i++){
             System.out.print(m[i] + " ");
@@ -17,7 +20,7 @@ public class Lab_Work_1_6_1 {
     }
 }
 /**
- *   > > > Embodiment № 1 < < <
+ *   > > > Embodiment № 2 < < <
  *
  *   int[] m = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 };
  *        System.out.print(m[0] + " ");
@@ -37,7 +40,7 @@ public class Lab_Work_1_6_1 {
  *        System.out.print(m[14] + " ");
  *
  *
- *     > > > Embodiment № 2 < < <
+ *     > > > Embodiment № 3 < < <
  *
  *   int[] m = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 };
  *      for (int i =0; i <m.length; i++){

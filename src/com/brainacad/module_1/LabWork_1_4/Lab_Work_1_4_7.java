@@ -5,7 +5,12 @@ package com.brainacad.module_1.LabWork_1_4;
  * Write a console program that prints result of Ternary operator for  integer variable initialization.
  */
 public class Lab_Work_1_4_7 {
-    public  static void main (String[] args){
+    public static void main(String[] args) {
 
+        int a = 5;
+        int b = 6;
+        int minVal = a < b ? a : b;
+
+        System.out.println(minVal);
     }
 }

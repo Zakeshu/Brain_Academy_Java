@@ -6,7 +6,7 @@ package com.brainacad.module_1.LabWork_1_4;
  * (AND,OR,NOT,XOR) for two variables of boolean data type.
  */
 public class Lab_Work_1_4_3 {
-    public  static void main (String[] args){
+    public static void main(String[] args) {
 
         boolean a = false, b = true;
 

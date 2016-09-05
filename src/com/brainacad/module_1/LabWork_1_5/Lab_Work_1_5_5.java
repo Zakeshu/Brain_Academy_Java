@@ -10,5 +10,14 @@ package com.brainacad.module_1.LabWork_1_5;
 public class Lab_Work_1_5_5 {
     public static void main  (String[] args) {
 
+        int sum = 0;
+        int avg = 0;
+
+        for (int i = 1; sum <= 100; i++ ) {
+            sum+=i;
+            avg = sum / i;
+        }
+        System.out.println(sum);
+        System.out.println(avg);
     }
 }

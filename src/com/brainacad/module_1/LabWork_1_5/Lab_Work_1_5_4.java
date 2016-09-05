@@ -6,7 +6,19 @@ package com.brainacad.module_1.LabWork_1_5;
  * The output shall look: 3 4 ... 20
  */
 public class Lab_Work_1_5_4 {
-    public static void main  (String[] args) {
+    public static void main(String[] args) {
+        int i = 1;
+        int n = 0;
 
+        while (i < 300) {
+            if (i % 3 == 0 || i % 4 == 0) {
+                System.out.println(i);
+                n++;
+            }
+            i++;
+            if (n == 10) {
+                break;
+            }
+        }
     }
 }

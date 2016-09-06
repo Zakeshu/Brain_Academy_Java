@@ -21,23 +21,16 @@ public class Lab_Work_1_6_2 {
             if (m[i] > maximum) {
                 maximum = m[i];
             }
-
             if (m[i] < minimum) {
                 minimum = m[i];
             }
-
             sum += m[i];
-            average = sum/ m.length;
-
         }
-
-
+        average = sum/ m.length;
         System.out.println("maximum: " + maximum);
         System.out.println("minimum: " + minimum);
         System.out.println("average: " + average);
         System.out.println("median: " + median);
-
-
     }
 }
 

@@ -4,7 +4,6 @@ package com.brainacad.module_1.LabWork_1_5;
  * Created by a.zemlyanskiy on 01.09.2016.
  * Write a program to produce the multiplication table of 1 to 9 as shown
  * using two nested for-loops:
- * <p>
  * * |  1  2  3  4  5  6  7  8  9
  * -------------------------------
  * 1 |  1  2  3  4  5  6  7  8  9

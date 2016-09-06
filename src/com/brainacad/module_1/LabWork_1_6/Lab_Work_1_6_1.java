@@ -20,7 +20,7 @@ public class Lab_Work_1_6_1 {
     }
 }
 /**
- *   > > > Embodiment № 2 < < <
+ *   > > > Вариант № 2 < < <
  *
  *   int[] m = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 };
  *        System.out.print(m[0] + " ");
@@ -40,7 +40,7 @@ public class Lab_Work_1_6_1 {
  *        System.out.print(m[14] + " ");
  *
  *
- *     > > > Embodiment № 3 < < <
+ *     > > > Вариант № 3 < < <
  *
  *   int[] m = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 };
  *      for (int i =0; i <m.length; i++){

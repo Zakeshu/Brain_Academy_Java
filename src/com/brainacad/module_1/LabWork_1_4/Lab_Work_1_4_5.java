@@ -10,7 +10,7 @@ public class Lab_Work_1_4_5 {
         int a = 0x000F;
         int b = 0x2222;
 
-        System.out.println(b << a);
-        System.out.println(b >> a);
+        System.out.println(Integer.toBinaryString(b << a));
+        System.out.println(Integer.toBinaryString(b >> a));
     }
 }

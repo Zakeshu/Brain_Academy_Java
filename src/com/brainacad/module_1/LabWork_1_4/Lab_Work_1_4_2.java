@@ -12,7 +12,7 @@ public class Lab_Work_1_4_2 {
 
         System.out.println("a + b = " + (a + b));
         System.out.println("a - b = " + (a - b));
-        System.out.println("b / a = " + b / a);
+        System.out.println("b / a = " + (double) b / a);
         System.out.println("a * b = " + a * b);
         System.out.println("a % b = " + a % b);
     }

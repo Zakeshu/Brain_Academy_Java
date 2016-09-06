@@ -43,3 +43,10 @@ public class Lab_Work_1_6_5 {
 
     }
 }
+
+//        Console output:
+//
+//        Line 1: [ 0  1  2 ]
+//        Line 2: [ 1  3 ]
+//        Line 3: [ 4 ]
+//        Line 4: [ 3 ]

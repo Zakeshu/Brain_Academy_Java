@@ -33,20 +33,61 @@ public class Lab_Work_1_6_5 {
 
             for (int j = 0; j <= m.length; j++) {
                 if (number == m[i][j]) {
-                   k = j;
-                   System.out.print(" " + k + " " );
+                    k = j;
+                    System.out.print(" " + k + " ");
                 }
             }
             System.out.print("]");
             System.out.println();
         }
-
     }
 }
+/*
+    int[][] array = new int[5][5];
+    int key = 1;
+    int lineNumber = 1;
 
-//        Console output:
-//
-//        Line 1: [ 0  1  2 ]
-//        Line 2: [ 1  3 ]
-//        Line 3: [ 4 ]
-//        Line 4: [ 3 ]
+    Random rnd = new Random();
+
+for (int i = 0; i < array.length; i++)
+        {
+        for (int j = 0; j < array.length; j++)
+        {
+        array[i][j] = rnd.nextInt(10);
+        }
+        }
+
+        for (int[] x : array)
+        {
+        System.out.print("| ");
+
+        for (int y : x)
+        {
+        System.out.print(y + " | ");
+        }
+        System.out.println();
+        }
+
+        for (int[] line : array)
+        {
+        String delimiter = "";
+        String message = "";
+        int count = 0;
+        boolean print = false;
+
+        for (int i = 0; i < line.length; i++)
+        {
+        if (line[i] == key)
+        {
+        delimiter = (count > 0 && count < 4) ? "," : "";
+        message += delimiter + String.valueOf(i);
+        print = true;
+        count++;
+        }
+        }
+        if (print)
+        {
+        System.out.println("Line " + lineNumber + ": [" + message + "]");
+        }
+        lineNumber++;
+        } */

@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Lab_Work_1_6_4 {
     public static void main(String args[]) throws Exception {
-        int counter, num, item, first, last;
+        int item, firstIndex, lastIndex;
         int[] array = {1, 95, 2, 6, 45, 65, 74, 85, 10, 01, 3, 99, 478};
 
         Arrays.sort(array);
@@ -19,37 +19,28 @@ public class Lab_Work_1_6_4 {
         System.out.println("Введите элемент для бинарного поиска: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         item = Integer.parseInt(reader.readLine());
-        first = 0;
-        last = array.length - 1;
-
-        // метод принимает начальный и последний индекс, а также число для поиска
-        binarySearch(array, first, last, item);
+        firstIndex = 0;
+        lastIndex = array.length - 1;
+        binarySearch(array, firstIndex, lastIndex, item);
     }
 
-    // бинарный поиск
-    public static void binarySearch(int[] array, int first, int last, int item) {
-        int position;
-        int count = 1;    // для подсчета количества сравнений
+    public static void binarySearch(int[] array, int firstIndex, int lastIndex, int item) {
+        int index;
+        index = (firstIndex + lastIndex) / 2;
 
-        // для начала найдем индекс среднего элемента массива
-        position = (first + last) / 2;
-
-        while ((array[position] != item) && (first <= last)) {
-            count++;
-            if (array[position] > item) {  // если число заданного для поиска
-                last = position - 1; // уменьшаем позицию на 1.
+        while ((array[index] != item) && (firstIndex <= lastIndex)) {
+            if (array[index] > item) {
+                lastIndex = index - 1;
             } else {
-                first = position + 1;    // иначе увеличиваем на 1
+                firstIndex = index + 1;
             }
-            position = (first + last) / 2;
+            index = (firstIndex + lastIndex) / 2;
         }
-        if (first <= last) {
-            System.out.println(item + " является " + ++position + " элементом в массиве");
-            System.out.println("Метод бинарного поиска нашел число после " + count +
-                    " сравнений");
+        if (firstIndex <= lastIndex) {
+            System.out.println("Element: " + item + " found. Index in array: [" + ++index + "]");
+
         } else {
-            System.out.println("Элемент не найден в массиве. Метод бинарного поиска закончил работу после "
-                    + count + " сравнений");
+            System.out.println("Element not found");
         }
     }
 }

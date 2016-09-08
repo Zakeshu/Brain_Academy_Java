@@ -12,7 +12,7 @@ package com.brainacad.module_1.LabWork_1_6;
 public class Lab_Work_1_6_3 {
     public static void main(String[] args) {
 
-        int[][] m = new int[4][4];
+        int[][] array = new int[4][4];
 
     }
 }

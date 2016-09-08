@@ -7,15 +7,15 @@ package com.brainacad.module_1.LabWork_1_6;
  */
 public class Lab_Work_1_6_1 {
     public static void main  (String[] args) {
-        int[] m = new int[15];
-        int b = 2;
+        int[] array = new int[15];
+        int value = 2;
 
         for(int i = 0; i < 15; i++) {
-            m[i] = b;
-            b +=  2;
+            array[i] = value;
+            value +=  2;
         }
-        for ( int i = 0; i <m.length; i++){
-            System.out.print(m[i] + " ");
+        for ( int i = 0; i <array.length; i++){
+            System.out.print(array[i] + " ");
         }
     }
 }

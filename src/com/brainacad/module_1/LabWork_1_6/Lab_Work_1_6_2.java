@@ -11,41 +11,40 @@ import java.util.Arrays;
 public class Lab_Work_1_6_2 {
 
 
-    public static double median(int[] m) {
+    public static double median(int[] array) {
 
-        int median = m.length / 2;
-        Arrays.sort(m);
-        if (m.length % 2 == 1) {
-            return m[median];
+        int median = array.length / 2;
+        Arrays.sort(array);
+        if (array.length % 2 == 1) {
+            return array[median];
         } else {
-            return (m[median - 1] + m[median]) / 2.0;
+            return (array[median - 1] + array[median]) / 2.0;
         }
     }
 
     public static void main(String[] args) {
 
-        int[] m = new int[]{10, 21, 5, 22, 9, 29, 25, 22, 11, 14, 8, 14};
+        int[] array = new int[] {10, 21, 5, 22, 9, 29, 25, 22, 11, 14, 8, 14};
         int maximum = 0;
-        int minimum = m[0];
+        int minimum = array[0];
         int average = 0;
-        int median = 0;
         int sum = 0;
 
-        for (int i = 0; i < m.length; i++) {
-            if (m[i] > maximum) {
-                maximum = m[i];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > maximum) {
+                maximum = array[i];
             }
-            if (m[i] < minimum) {
-                minimum = m[i];
+            if (array[i] < minimum) {
+                minimum = array[i];
             }
 
-            sum += m[i];
+            sum += array[i];
         }
-        average = sum / m.length;
+        average = sum / array.length;
         System.out.println("maximum: " + maximum);
         System.out.println("minimum: " + minimum);
         System.out.println("average: " + average);
-        System.out.println("median: " + median(m));
+        System.out.println("median: " + median(array));
     }
 }
 

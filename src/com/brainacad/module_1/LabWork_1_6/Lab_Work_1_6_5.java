@@ -20,21 +20,21 @@ public class Lab_Work_1_6_5 {
     public static void main(String[] args) {
 
         int number = 1;
-        int a = 1, k = 0;
-        int[][] m = {
+        int count = 1, indexNumber = 0;
+        int[][] array = {
                 {1, 1, 1, 3, 4},
                 {2, 1, 3, 1, 2},
                 {2, 2, 3, 4, 1},
                 {3, 3, 3, 1, 4}
         };
 
-        for (int i = 0; i < m.length; i++) {
-            System.out.print("Line " + a++ + ": [");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Line " + count++ + ": [");
 
-            for (int j = 0; j <= m.length; j++) {
-                if (number == m[i][j]) {
-                    k = j;
-                    System.out.print(" " + k + " ");
+            for (int j = 0; j <= array.length; j++) {
+                if (number == array[i][j]) {
+                    indexNumber = j;
+                    System.out.print(" " + indexNumber + " ");
                 }
             }
             System.out.print("]");

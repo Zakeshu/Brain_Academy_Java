@@ -11,17 +11,17 @@ import java.util.Scanner;
  */
 public class Lab_Work_1_6_4 {
     public static void main(String args[]) throws Exception {
-        int item, firstIndex, lastIndex;
+        int value, firstIndex, lastIndex;
         int[] array = {1, 95, 2, 6, 45, 65, 74, 85, 10, 01, 3, 99, 478};
 
         Arrays.sort(array);
 
         System.out.println("Введите элемент для бинарного поиска: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        item = Integer.parseInt(reader.readLine());
+        value = Integer.parseInt(reader.readLine());
         firstIndex = 0;
         lastIndex = array.length - 1;
-        binarySearch(array, firstIndex, lastIndex, item);
+        binarySearch(array, firstIndex, lastIndex, value);
     }
 
     public static void binarySearch(int[] array, int firstIndex, int lastIndex, int item) {

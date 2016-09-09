@@ -15,21 +15,19 @@ public class Lab_Work_1_6_4 {
         int[] array = {1, 95, 2, 6, 45, 65, 74, 85, 10, 01, 3, 99, 478};
 
         Arrays.sort(array);
+        System.out.println("Enter Value for binary search: ");
 
-        System.out.println("Введите элемент для бинарного поиска: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        value = Integer.parseInt(reader.readLine());
+        int enteredValue = Integer.parseInt(reader.readLine());
+
         firstIndex = 0;
         lastIndex = array.length - 1;
-        binarySearch(array, firstIndex, lastIndex, value);
-    }
-
-    public static void binarySearch(int[] array, int firstIndex, int lastIndex, int item) {
+    //    binarySearch(array, firstIndex, lastIndex, value);
         int index;
         index = (firstIndex + lastIndex) / 2;
 
-        while ((array[index] != item) && (firstIndex <= lastIndex)) {
-            if (array[index] > item) {
+        while ((array[index] != enteredValue) && (firstIndex <= lastIndex)) {
+            if (array[index] > enteredValue) {
                 lastIndex = index - 1;
             } else {
                 firstIndex = index + 1;
@@ -37,10 +35,30 @@ public class Lab_Work_1_6_4 {
             index = (firstIndex + lastIndex) / 2;
         }
         if (firstIndex <= lastIndex) {
-            System.out.println("Element: " + item + " found. Index in array: [" + ++index + "]");
+            System.out.println("Value: " + enteredValue + " found. Index in array: [" + ++index + "]");
 
         } else {
-            System.out.println("Element not found");
+            System.out.println("Value not found in the array");
         }
     }
+
+//    public static void binarySearch(int[] array, int firstIndex, int lastIndex, int item) {
+//        int index;
+//        index = (firstIndex + lastIndex) / 2;
+//
+//        while ((array[index] != item) && (firstIndex <= lastIndex)) {
+//            if (array[index] > item) {
+//                lastIndex = index - 1;
+//            } else {
+//                firstIndex = index + 1;
+//            }
+//            index = (firstIndex + lastIndex) / 2;
+//        }
+//        if (firstIndex <= lastIndex) {
+//            System.out.println("Value: " + item + " found. Index in array: [" + ++index + "]");
+//
+//        } else {
+//            System.out.println("Value not found in the array");
+//        }
+//    }
 }

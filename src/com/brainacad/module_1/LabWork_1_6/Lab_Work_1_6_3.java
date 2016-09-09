@@ -13,7 +13,31 @@ public class Lab_Work_1_6_3 {
     public static void main(String[] args) {
 
         int[][] array = new int[4][4];
+        int lineNumber = 1;
 
+
+        for (int i = 0; i < array.length; i++) {
+
+            int step = 4;
+
+            for (int j = 0; j < array.length; j++) {
+                if (j == 0) {
+                    array[i][j] = lineNumber;
+                } else {
+                    array[i][j] = lineNumber + step;
+                    step += 4;
+                }
+            }
+            lineNumber++;
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                System.out.print(" " + array[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
+
 

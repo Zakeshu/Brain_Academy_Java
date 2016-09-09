@@ -24,10 +24,10 @@ public class Lab_Work_1_6_2 {
 
     public static void main(String[] args) {
 
-        int[] array = new int[] {10, 21, 5, 22, 9, 29, 25, 22, 11, 14, 8, 14};
+        int[] array = new int[]{10, 21, 5, 22, 9, 29, 25, 22, 11, 14, 8, 14};
         int maximum = 0;
         int minimum = array[0];
-        int average = 0;
+        int average;
         int sum = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -40,6 +40,7 @@ public class Lab_Work_1_6_2 {
 
             sum += array[i];
         }
+
         average = sum / array.length;
         System.out.println("maximum: " + maximum);
         System.out.println("minimum: " + minimum);

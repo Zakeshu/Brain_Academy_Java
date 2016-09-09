@@ -15,7 +15,6 @@ public class Lab_Work_1_6_3 {
         int[][] array = new int[4][4];
         int lineNumber = 1;
 
-
         for (int i = 0; i < array.length; i++) {
 
             int step = 4;

@@ -11,8 +11,11 @@ import java.util.Scanner;
  */
 public class Lab_Work_1_6_4 {
     public static void main(String args[]) throws Exception {
-        int value, firstIndex, lastIndex;
+
         int[] array = {1, 95, 2, 6, 45, 65, 74, 85, 10, 01, 3, 99, 478};
+        int    firstIndex = 0;
+        int  lastIndex = array.length - 1;
+        int index;
 
         Arrays.sort(array);
         System.out.println("Enter Value for binary search: ");
@@ -20,10 +23,7 @@ public class Lab_Work_1_6_4 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int enteredValue = Integer.parseInt(reader.readLine());
 
-        firstIndex = 0;
-        lastIndex = array.length - 1;
     //    binarySearch(array, firstIndex, lastIndex, value);
-        int index;
         index = (firstIndex + lastIndex) / 2;
 
         while ((array[index] != enteredValue) && (firstIndex <= lastIndex)) {
@@ -36,7 +36,6 @@ public class Lab_Work_1_6_4 {
         }
         if (firstIndex <= lastIndex) {
             System.out.println("Value: " + enteredValue + " found. Index in array: [" + ++index + "]");
-
         } else {
             System.out.println("Value not found in the array");
         }

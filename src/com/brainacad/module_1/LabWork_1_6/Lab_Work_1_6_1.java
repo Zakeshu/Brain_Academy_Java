@@ -7,42 +7,22 @@ package com.brainacad.module_1.LabWork_1_6;
  */
 public class Lab_Work_1_6_1 {
     public static void main  (String[] args) {
+
         int[] array = new int[15];
         int value = 2;
+        int count = 0;
+        String separator;
 
         for(int i = 0; i < 15; i++) {
             array[i] = value;
             value +=  2;
         }
-        for ( int i = 0; i <array.length; i++){
-            System.out.print(array[i] + " ");
+        System.out.print("Array [ ");
+        for ( int i = 0; i < array.length; i++){
+            separator = (count > -1 && count < (array.length-1)) ? "," : "";
+            System.out.print(array[i] + separator + " ");
+            count++;
         }
+        System.out.println("]");
     }
 }
-/**
- *   > > > Вариант № 2 < < <
- *
- *   int[] m = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 };
- *        System.out.print(m[0] + " ");
- *        System.out.print(m[1] + " ");
- *        System.out.print(m[2] + " ");
- *        System.out.print(m[3] + " ");
- *        System.out.print(m[4] + " ");
- *        System.out.print(m[5] + " ");
- *        System.out.print(m[6] + " ");
- *        System.out.print(m[7] + " ");
- *        System.out.print(m[8] + " ");
- *        System.out.print(m[9] + " ");
- *        System.out.print(m[10] + " ");
- *        System.out.print(m[11] + " ");
- *        System.out.print(m[12] + " ");
- *        System.out.print(m[13] + " ");
- *        System.out.print(m[14] + " ");
- *
- *
- *     > > > Вариант № 3 < < <
- *
- *   int[] m = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 };
- *      for (int i =0; i <m.length; i++){
- *      System.out.print(m[i] + " ");
- */

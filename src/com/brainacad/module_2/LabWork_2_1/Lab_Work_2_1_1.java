@@ -7,4 +7,15 @@ package com.brainacad.module_2.LabWork_2_1;
  * frequencyCPU(of int type).
  */
 public class Lab_Work_2_1_1 {
+    public static void main(String[] args) {
+
+    }
+}
+
+class Computer {
+    String manufacturer;
+    int serialNumber;
+    float price;
+    int quantityCPU;
+    int frequencyCPU;
 }

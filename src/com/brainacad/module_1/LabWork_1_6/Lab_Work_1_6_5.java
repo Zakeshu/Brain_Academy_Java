@@ -20,7 +20,7 @@ public class Lab_Work_1_6_5 {
     public static void main(String[] args) {
 
         int number = 1;
-        int count = 1, indexNumber = 0;
+        int count = 1, indexNumber;
         int[][] array = {
                 {1, 1, 1, 3, 4},
                 {2, 1, 3, 1, 2},

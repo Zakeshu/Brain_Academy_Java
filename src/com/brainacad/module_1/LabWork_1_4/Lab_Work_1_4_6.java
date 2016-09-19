@@ -12,5 +12,6 @@ public class Lab_Work_1_4_6 {
         System.out.println(Integer.toBinaryString(b & a));
         System.out.println(Integer.toBinaryString(b ^ a));
         System.out.println(Integer.toBinaryString(b | a));
+        System.out.println(Integer.toBinaryString(~a));
     }
 }

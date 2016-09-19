@@ -13,6 +13,7 @@ public class Lab_Work_2_1_1 {
 }
 
 class Computer {
+
     String manufacturer;
     int serialNumber;
     float price;

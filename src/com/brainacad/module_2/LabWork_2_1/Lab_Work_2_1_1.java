@@ -10,8 +10,7 @@ public class Lab_Work_2_1_1 {
     public static void main(String[] args) {
 
         Computer[] computer = new Computer[10];
-
-        for (int i = 0; i < computer.length; i++) {
+        for (int i = 0; i < computer.length-1; i++) {
             computer[i] = new Computer();
             float defaultPrice = 10f + i;
             computer[i].setPrice(defaultPrice);

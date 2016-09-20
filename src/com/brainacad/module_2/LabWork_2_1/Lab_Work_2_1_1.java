@@ -9,14 +9,15 @@ package com.brainacad.module_2.LabWork_2_1;
 public class Lab_Work_2_1_1 {
     public static void main(String[] args) {
 
+        Computer[] computer = new Computer[10];
+
+        for (int i = 0; i < computer.length; i++) {
+            computer[i] = new Computer();
+            float defaultPrice = 10f + i;
+            computer[i].setPrice(defaultPrice);
+//            System.out.println(computer[i].getPrice());
+            computer[i].view();
+        }
     }
 }
 
-class Computer {
-
-    String manufacturer;
-    int serialNumber;
-    float price;
-    int quantityCPU;
-    int frequencyCPU;
-}

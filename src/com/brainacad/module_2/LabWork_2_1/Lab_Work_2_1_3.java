@@ -9,11 +9,10 @@ package com.brainacad.module_2.LabWork_2_1;
 public class Lab_Work_2_1_3 {
     public static void main(String[] args) {
 
-        Computer[] computer = new Computer[3];
+        Computer[] computer = new Computer[5];
 
         for (int i = 0; i < 5; i++) {
             computer[i] = new Computer ();
-
         }
     }
 
@@ -23,7 +22,6 @@ public class Lab_Work_2_1_3 {
         public float price;
         public int quantityCPU;
         public int frequencyCPU;
-
 
         public String getManufacturer() {
             return manufacturer;

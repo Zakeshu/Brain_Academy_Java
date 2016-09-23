@@ -3,7 +3,12 @@ package com.brainacad.module_1.LabWork_1_6;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
+
+import static java.util.Arrays.*;
+
+
 
 /**
  * Created by a.zemlyanskiy on 01.09.2016.
@@ -13,8 +18,8 @@ public class Lab_Work_1_6_4 {
     public static void main(String args[]) throws Exception {
 
         int[] array = {1, 95, 2, 6, 45, 65, 74, 85, 10, 01, 3, 99, 478};
-        int    firstIndex = 0;
-        int  lastIndex = array.length - 1;
+        int firstIndex = 0;
+        int lastIndex = array.length - 1;
         int index;
 
         Arrays.sort(array);
@@ -23,7 +28,7 @@ public class Lab_Work_1_6_4 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int enteredValue = Integer.parseInt(reader.readLine());
 
-    //    binarySearch(array, firstIndex, lastIndex, value);
+        //    binarySearch(array, firstIndex, lastIndex, value);
         index = (firstIndex + lastIndex) / 2;
 
         while ((array[index] != enteredValue) && (firstIndex <= lastIndex)) {
@@ -40,7 +45,8 @@ public class Lab_Work_1_6_4 {
             System.out.println("Value not found in the array");
         }
     }
-
+}
+//----------------------------
 //    public static void binarySearch(int[] array, int firstIndex, int lastIndex, int item) {
 //        int index;
 //        index = (firstIndex + lastIndex) / 2;
@@ -60,4 +66,4 @@ public class Lab_Work_1_6_4 {
 //            System.out.println("Value not found in the array");
 //        }
 //    }
-}
+

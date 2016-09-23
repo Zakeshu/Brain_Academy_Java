@@ -1,0 +1,40 @@
+Lab_Work_2_2_1
+
+/**
+ * Create class Matrix with 2D array (int, size 2x2) field and methods: addition and multiplication of matrices;
+ */
+
+
+Lab_Work_2_2_2
+
+/**
+ * Write class that create instances of class Matrix and execute his methods.
+ */
+
+
+Lab_Work_2_2_3
+
+/**
+ * Write class Employee with method calcSalary with argument name(String) and varargs salary(double…).
+ * This method should calc total salary of employee and print his name and total salary.
+ * Write class Accountant that will be create Employee instance and use his method with a different number of data.
+ */
+
+
+Lab_Work_2_2_4
+/**
+ * Create class Person with fields firstName(String), lastName(String), age(int), gender(String),
+ * phoneNumber(int), and  five overloaded methods that set this fields with different arguments list.
+ * And create class that will be use instance of class Person and his methods.
+ */
+
+
+Lab_Work_2_2_5
+/**
+ * Write class A with overridden methods calcSquare that calculate square of rectangle,
+ * square of foursquare and square of circle and print result.
+ * Write class that will use these methods.
+ *
+ * Write class with method that will take final integer and assign to it the square
+ * of this integer and print result. What will you get? Explain result.
+ */

@@ -34,7 +34,6 @@ public class Computer {
     public void setPrice(float price) {
 
         this.price = price * 1.1f;
-//        this.price = price;
     }
 
     public int getQuantityCPU() {

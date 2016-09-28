@@ -70,7 +70,7 @@ public class Matrix {
         return matrix_C;
     }
 }
-
+//
 //---
 //n - размерность матриц
 //int n = 2;

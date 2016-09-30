@@ -8,37 +8,4 @@ package com.brainacad.module_2.LabWork_2_2;
  */
 public class Person {
 
-
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String gender;
-    public int phoneNumber;
-
-    public void overloadedMethodsPerson() {
-
-    }
-
-    public void overloadedMethodsPerson(String firstName, String lastName) {
-
-    }
-
-    public void overloadedMethodsPerson(String firstName, String lastName, int age) {
-
-    }
-
-    public void overloadedMethodsPerson(String firstName, String lastName, int age, String gender) {
-
-    }
-
-    public void overloadedMethodsPerson(String firstName, String lastName, int age, String gender, int phoneNumber) {
-
-    }
-}
-
-class Main{
-    public static void main(String[] args) {
-        Person person = new Person();
-        person.overloadedMethodsPerson();
-    }
 }

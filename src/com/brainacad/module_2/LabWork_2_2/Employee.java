@@ -13,11 +13,11 @@ public class Employee {
     private double salary;
 
     public void calcSalary (String name, double... salary ){
-//        for(int i = 0; i < salary.length; i++){
-//
-//        }
-        for (double x : salary) {
+        for(int i = 0; i < salary.length; i++){
+
         }
+//        for (double x : salary) {
+//        }
 
         System.out.println("Workers name: " + name + "  salary: " + salary );
     }

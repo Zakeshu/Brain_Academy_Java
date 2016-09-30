@@ -1,0 +1,44 @@
+Lab_Work_2_3_1
+
+/**
+ * Created by a.zemlyanskiy on 05.09.2016.
+ * Create class “MyWindow” with fields (width (of double type), height (of double type),
+ * numberOfGlass(of int type), color(of  String type), isOpen(boolean)).
+ * Create five instances of class MyWindow,  with different  fields values.
+ */
+
+Lab_Work_2_3_2
+
+/**
+ * Created by a.zemlyanskiy on 05.09.2016.
+ * Add to class MyWindow constructor without parameters, which will initialize class’s fields by some default values.
+ * Create instance of class MyWindow using constructor without parameters.
+ */
+
+Lab_Work_2_3_3
+
+/**
+ * Created by a.zemlyanskiy on 05.09.2016.
+ * Add to class Window overload constructors, which will initialize class’ fields, depend from what data we will put there:
+ * MyWindow(width, height),
+ * MyWindow(width, height, numberOfGlass).
+ * Finally class MyWindow must have four constructors)
+ */
+
+Lab_Work_2_3_4
+
+/**
+ * Created by a.zemlyanskiy on 05.09.2016.
+ * Change code in two overloaded constructors to invoke first constructor using “this” keyword.
+ */
+
+Lab_Work_2_3_5
+
+/**
+ * Created by a.zemlyanskiy on 05.09.2016.
+ * Add method “printFields” to  MyWindow class.
+ * In printFields method write code that print all fields values to console.
+ * Create array of MyWindow’s and fill it by creating MyWindow’s objects using different constructors.
+ * Call method “printFields” on each array element.
+ */
+
